@@ -15,7 +15,7 @@ const DashboardNav = () => {
                       
                         {/* Drawer BTN and logo */}
                         <div className="flex items-center gap-10">
-                            <span className=" text-gray-50 normal-case text-3xl">
+                            <span className=" text-gray-50 normal-case sm:text-3xl text-2xl">
                                 IDrive e2
                             </span>
 

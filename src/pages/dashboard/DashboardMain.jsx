@@ -29,7 +29,7 @@ const DashboardMain = () => {
                         htmlFor="my-drawer"
                         className="drawer-overlay"
                     ></label>
-                    <div className="menu p-4 overflow-y-auto w-80 relative bg-gray-50  text-base-content">
+                    <div className="menu p-4 overflow-y-auto w-56 xl:w-80 relative bg-gray-50  text-base-content">
                         <div className="flex-col items-stretch">
                             <ul>
                                 {/* Sidebar content Top */}
@@ -43,16 +43,16 @@ const DashboardMain = () => {
                                     </Link>
                                 </li>
                                 <li>
+                                    <Link to="buckets">
+                                        <FontAwesomeIcon icon={faBucket} />
+                                        Buckets
+                                    </Link>
+                                </li>
+                                <li>
                                     <Link to="users">
                                         {' '}
                                         <FontAwesomeIcon icon={faUserCircle} />
                                         User
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link to="buckets">
-                                        <FontAwesomeIcon icon={faBucket} />
-                                        Buckets
                                     </Link>
                                 </li>
                             </ul>

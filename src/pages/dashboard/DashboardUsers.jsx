@@ -5,30 +5,30 @@ import { faPlus } from '@fortawesome/free-solid-svg-icons'
 const DashboardUsers = () => {
     return (
         <section className="max-w-7xl mx-auto">
-            <div className="mx-20 my-20">
-            <header className="xl:flex justify-between ">
-                    <div className="  md:flex md:items-center md:gap-10 grid gap-2 mb-5 xl:mb-10 ">
+            <div className="mx-6 my-20">
+            <header className="md:flex justify-between ">
+                    <div className="  md:flex md:items-center lg:gap-8 md:gap-5 gap-2 mb-5 xl:mb-10 ">
                         <h1 className="text-3xl font-bold">Users </h1>
-                        <button className="btn max-w-[150px] inline btn-primary ">
+                        <button  className=" lg:max-w-[150px] mx-w-[120px] inline btn-primary  md:max-w-[120px] md:text-[14px] my-2 md:my-0 p-2 rounded-md">
                             {' '}
                             <FontAwesomeIcon icon={faPlus} />{' '}
-                            <span className="ml-2">Invite User</span>
+                            <span className="ml-2 md:ml-1">Invite User</span>
                         </button>
                         <h3>View Canceled Users</h3>
                     </div>
-                    <div className="md:flex items-center gap-10 mb-5 xl:mb-10">
+                    <div className="md:flex items-center md:gap-2 lg:gap-4 mb-5 xl:mb-10">
                         <h3>Total users: 4</h3>
                         <div className="form-control">
                             <div className="input-group">
-                                <input
+                                <input 
                                     type="text"
                                     placeholder="Search user"
-                                    className="input input-bordered"
+                                    className="input input-bordered md:w-36"
                                 />
                                 <button className="btn btn-square">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
-                                        className="h-6 w-6"
+                                        className="h-6 w-6 "
                                         fill="none"
                                         viewBox="0 0 24 24"
                                         stroke="currentColor"
