@@ -14,7 +14,7 @@ const DashboardMain = () => {
     return (
         <div>
             <DashboardNav />
-            <div className="drawer">
+            <div className="drawer drawer-mobile">
                 <input
                     id="my-drawer"
                     type="checkbox"
@@ -29,7 +29,7 @@ const DashboardMain = () => {
                         htmlFor="my-drawer"
                         className="drawer-overlay"
                     ></label>
-                    <div className="menu p-4 overflow-y-auto w-80 relative bg-blue-100 text-base-content">
+                    <div className="menu p-4 overflow-y-auto w-80 relative bg-gray-50  text-base-content">
                         <div className="flex-col items-stretch">
                             <ul>
                                 {/* Sidebar content Top */}

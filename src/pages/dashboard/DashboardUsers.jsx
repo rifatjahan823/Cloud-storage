@@ -6,17 +6,17 @@ const DashboardUsers = () => {
     return (
         <section className="max-w-7xl mx-auto">
             <div className="mx-20 my-20">
-                <header className="flex justify-between mb-10 ">
-                    <div className="flex items-center gap-10">
+            <header className="xl:flex justify-between ">
+                    <div className="  md:flex md:items-center md:gap-10 grid gap-2 mb-5 xl:mb-10 ">
                         <h1 className="text-3xl font-bold">Users </h1>
-                        <button className="btn btn-primary">
+                        <button className="btn max-w-[150px] inline btn-primary ">
                             {' '}
                             <FontAwesomeIcon icon={faPlus} />{' '}
                             <span className="ml-2">Invite User</span>
                         </button>
                         <h3>View Canceled Users</h3>
                     </div>
-                    <div className="flex items-center gap-10">
+                    <div className="md:flex items-center gap-10 mb-5 xl:mb-10">
                         <h3>Total users: 4</h3>
                         <div className="form-control">
                             <div className="input-group">
@@ -47,8 +47,8 @@ const DashboardUsers = () => {
                 </header>
                 <div>
                     <div className="overflow-x-auto relative shadow-md sm:rounded-lg">
-                        <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
-                            <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                    <table className="w-full text-sm text-left text-gray-500  ">
+                            <thead className="text-xs text-gray-700 uppercase bg-gray-50   ">
                                 <tr>
                                     <th scope="col" className="py-3 px-6">
                                         Email Address
@@ -71,7 +71,7 @@ const DashboardUsers = () => {
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                <tr className="bg-white border-b      hover:bg-gray-50  ">
                                     <td className="py-4 px-6">Sliver</td>
                                     <td className="py-4 px-6">Sliver</td>
                                     <td className="py-4 px-6">Sliver</td>
@@ -79,7 +79,7 @@ const DashboardUsers = () => {
                                     <td className="py-4 px-6">$2999</td>
                                     <td className="py-4 px-6">$2999</td>
                                 </tr>
-                                <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                <tr className="bg-white border-b      hover:bg-gray-50  ">
                                     <td className="py-4 px-6">Sliver</td>
                                     <td className="py-4 px-6">Sliver</td>
                                     <td className="py-4 px-6">Sliver</td>
@@ -87,7 +87,7 @@ const DashboardUsers = () => {
                                     <td className="py-4 px-6">$2999</td>
                                     <td className="py-4 px-6">$2999</td>
                                 </tr>
-                                <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                <tr className="bg-white border-b      hover:bg-gray-50  ">
                                     <td className="py-4 px-6">Sliver</td>
                                     <td className="py-4 px-6">Sliver</td>
                                     <td className="py-4 px-6">Sliver</td>
@@ -95,7 +95,7 @@ const DashboardUsers = () => {
                                     <td className="py-4 px-6">$2999</td>
                                     <td className="py-4 px-6">$2999</td>
                                 </tr>
-                                <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                <tr className="bg-white border-b      hover:bg-gray-50  ">
                                     <td className="py-4 px-6">Sliver</td>
                                     <td className="py-4 px-6">Sliver</td>
                                     <td className="py-4 px-6">Sliver</td>
@@ -111,7 +111,7 @@ const DashboardUsers = () => {
                                         </span>
                                     </td>
                                 </tr>
-                                <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                <tr className="bg-white border-b      hover:bg-gray-50  ">
                                     <td className="py-4 px-6">Sliver</td>
                                     <td className="py-4 px-6">Sliver</td>
                                     <td className="py-4 px-6">Sliver</td>

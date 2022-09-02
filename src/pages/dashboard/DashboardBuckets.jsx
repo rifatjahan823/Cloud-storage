@@ -1,17 +1,18 @@
 import { faPlus } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { BsBucketFill } from "react-icons/bs";
 import React from 'react'
 
 const DashboardBuckets = () => {
     return (
         <section className="max-w-7xl mx-auto">
             <div className="mx-20 my-20">
-                <header className="flex justify-between mb-10 ">
-                    <div className="flex items-center gap-10">
+                <header className="xl:flex justify-between">
+                    <div className=" md:flex md:items-center md:gap-10 grid gap-2 mb-5 xl:mb-10 ">
                         <h1 className="text-3xl font-bold">Users </h1>
                         <label
                             for="create-bucket-model"
-                            className="btn btn-primary  modal-button"
+                            className="btn btn-primary  modal-button max-w-[200px]"
                         >
                             {' '}
                             <FontAwesomeIcon icon={faPlus} />{' '}
@@ -22,6 +23,7 @@ const DashboardBuckets = () => {
                             id="create-bucket-model"
                             class="modal-toggle"
                         />
+                        {/* -----modal------------ */}
                         <div class="modal modal-bottom sm:modal-middle">
                             <div class="modal-box relative">
                                 <label
@@ -30,24 +32,49 @@ const DashboardBuckets = () => {
                                 >
                                     ✕
                                 </label>
-                                <h3 class="font-bold text-lg">
-                                    Congratulations random Internet user!
+                                <h3 class="font-bold text-xl flex items-center ">
+                                    <BsBucketFill className='mr-3' style={{ fontSize: '30px' }} /> Create Bucket
                                 </h3>
-                                <p class="py-4">
-                                    You've been selected for a chance to get one
-                                    year of subscription to use Wikipedia for
-                                    free!
-                                </p>
-                                <div class="modal-action">
-                                    <label for="my-modal-6" class="btn">
-                                        Yay!
-                                    </label>
+                                {/* -----======------- */}
+                                <div className='bg-blue-100 p-5 mt-4 rounded-lg'>
+                                    <label htmlFor="" className='font-medium '>Enabled regions</label> <br />
+                                    <input className='border-2 border-gray-300 rounded-md w-full p-2 mt-1 placeholder:text-slate-900   focus:outline-none focus:border-gray-300' type="text" placeholder='finance' />
+                                </div>
+                                {/* ---=======---------- */}
+                                <div className='bg-blue-100 p-5 mt-4 rounded-lg'>
+                                    <div class="form-control">
+                                        <label class="label cursor-pointer">
+                                            <h3 className='font-medium '>Default encryption</h3>
+                                            <input type="checkbox" class="toggle toggle-primary"  />
+                                        </label>
+                                    </div>
+                                </div>
+                                {/* ---=======---------- */}
+                                <div className='bg-blue-100 p-5 mt-4 rounded-lg'>
+                                    <div className='flex items-start justify-between'>
+                                        <div>
+                                            <h3 className='font-medium '>Object locking</h3>
+                                            <p className='text-sm'>required support retention</p>
+                                            <p className='text-sm'>required support retention</p>
+                                        </div>
+                                        <div class="form-control">
+                                            <label class="label cursor-pointer">
+                                                <input type="checkbox" class="toggle toggle-primary"  />
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                {/* ------========- */}
+                                <div className='mt-5'>
+                                    <button className='py-1 px-4 bg-blue-500 text-white rounded-md mr-3 font-medium'>Create Bucket</button>
+                                    <button className='rounded-md border-2 border-gray-300 text-black font-medium'style={{padding:"2.5px 12px"}}>Cancel</button>
                                 </div>
                             </div>
                         </div>
                         <h3>View Canceled Users</h3>
+
                     </div>
-                    <div className="flex items-center gap-10">
+                    <div className="md:flex items-center gap-10 mb-5 xl:mb-10">
                         <h3>Total users: 4</h3>
                         <div className="form-control">
                             <div className="input-group">
@@ -78,8 +105,8 @@ const DashboardBuckets = () => {
                 </header>
                 <div>
                     <div className="overflow-x-auto relative shadow-md sm:rounded-lg">
-                        <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
-                            <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                        <table className="w-full text-sm text-left text-gray-500  ">
+                            <thead className="text-xs text-gray-700 uppercase bg-gray-50   ">
                                 <tr>
                                     <th scope="col" className="py-3 px-6">
                                         Email Address
@@ -102,7 +129,7 @@ const DashboardBuckets = () => {
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                <tr className="bg-white border-b      hover:bg-gray-50  ">
                                     <td className="py-4 px-6">Sliver</td>
                                     <td className="py-4 px-6">Sliver</td>
                                     <td className="py-4 px-6">Sliver</td>
@@ -110,7 +137,7 @@ const DashboardBuckets = () => {
                                     <td className="py-4 px-6">$2999</td>
                                     <td className="py-4 px-6">$2999</td>
                                 </tr>
-                                <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                <tr className="bg-white border-b      hover:bg-gray-50  ">
                                     <td className="py-4 px-6">Sliver</td>
                                     <td className="py-4 px-6">Sliver</td>
                                     <td className="py-4 px-6">Sliver</td>
@@ -118,7 +145,7 @@ const DashboardBuckets = () => {
                                     <td className="py-4 px-6">$2999</td>
                                     <td className="py-4 px-6">$2999</td>
                                 </tr>
-                                <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                <tr className="bg-white border-b      hover:bg-gray-50  ">
                                     <td className="py-4 px-6">Sliver</td>
                                     <td className="py-4 px-6">Sliver</td>
                                     <td className="py-4 px-6">Sliver</td>
@@ -126,7 +153,7 @@ const DashboardBuckets = () => {
                                     <td className="py-4 px-6">$2999</td>
                                     <td className="py-4 px-6">$2999</td>
                                 </tr>
-                                <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                <tr className="bg-white border-b      hover:bg-gray-50  ">
                                     <td className="py-4 px-6">Sliver</td>
                                     <td className="py-4 px-6">Sliver</td>
                                     <td className="py-4 px-6">Sliver</td>
@@ -142,7 +169,7 @@ const DashboardBuckets = () => {
                                         </span>
                                     </td>
                                 </tr>
-                                <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                <tr className="bg-white border-b      hover:bg-gray-50  ">
                                     <td className="py-4 px-6">Sliver</td>
                                     <td className="py-4 px-6">Sliver</td>
                                     <td className="py-4 px-6">Sliver</td>
